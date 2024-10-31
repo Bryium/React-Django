@@ -53,7 +53,9 @@ MIDDLEWARE = [
     'coresheaders.middleware.CorsMiddleware',
 ]
 
-REST_FRAMEWORK = {}
+REST_FRAMEWORK = {'DEFAULT_PERMISSION_CLASSES': [
+    'rest_framework.permission.AllowAny'
+]}
 
 ROOT_URLCONF = 'project.urls'
 
